@@ -24,4 +24,22 @@ public class CalculatorTest {
         calc.operate("+");
         assertEquals(42, calc.peek().toInteger());
     }
+
+    @Test
+    public void simpleSubtract() {
+        Calculator calc = new Calculator();
+        calc.push(44);
+        calc.push(2);
+        calc.operate("-");
+        assertEquals(42, calc.peek().toInteger());
+    }
+
+    @Test
+    public void simpleDivide() {
+        Calculator calc = new Calculator();
+        calc.push(84);
+        calc.push(2);
+        calc.operate("/");
+        assertEquals(42, calc.peek().toInteger());
+    }
 }
